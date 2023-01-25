@@ -30,6 +30,6 @@ def Read(filename):
     # type, mass, x,y,z coords, and x,y,z velocities
     data = np.genfromtxt(filename, dtype=None, names=True, skip_header=3)
     
-    return time, total_particles, data
+    return time*u.Myr, total_particles, data
 
 
