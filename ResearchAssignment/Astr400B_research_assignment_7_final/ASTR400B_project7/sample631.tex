@@ -55,9 +55,6 @@ The end product of the major merger is called the merger remant which occurs whe
 The merger remnant's halo may also have significant differences from the initial galaxies' halos as well.
 
 % why the topic matters
-%Many simulations have been conducted predicting the motions of the MW and M31 and their course to a future collision \citep[e.g.,][]{2012VanDerMarel}.
-%We propose investigating the characteristics of the dark matter halo remnant due to this future merger of the MW and M31. Using N-body simulations, we will explore the density profile of the halo remnant and the 3-dimensional shape of the halo. 
-
 %\subsection{Why this topic matters to our understanding of galaxy evolution}
 % what is a galaxy? and galaxy evolution
 As M31 is the closest galaxy to the MW, our knowledge of that galaxy is greater than most other extragalactic objects in the universe. Galaxy evolution, which is the process of changing the morphology and composition of galaxies \citep{2004galaxyevolutiondef}, is impossible to observe over human timescales, however, we can predict their evolution using N-body simulations.
@@ -127,7 +124,7 @@ The density contours seen in Figure \ref{fig:method_fig} show how concentrated t
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth,height=4.2cm]{figures/MW_M31_000_3subplots_Density.png}
-    \caption{Density contours of the MW at snapshot 0 with the particle density shown in a blue-to-green gradient. The yellow line is the 1-$\sigma$ contour.The red line is the 2-$\sigma$ contour. The pink line is the 3-$\sigma$ contour. The black dashed line shows the modeled ellipse using the 2-$\sigma$ contour as a reference. Left: shows the x-z plane. Middle: shows the x-y plane. Right: shows the y-z plane. We see the ellipsoidal shape in each plane is relatively circular}
+    \caption{Density contours of the MW at snapshot 0 with the particle density shown in a blue-to-green gradient. The yellow line is the 1-$\sigma$ contour.The red line is the 2-$\sigma$ contour. The pink line is the 3-$\sigma$ contour. The black dashed line shows the modeled ellipse using the 2-$\sigma$ contour as a reference. Left: shows the x-z plane. Middle: shows the x-y plane. Right: shows the y-z plane. We see the ellipsoidal shape in each plane is relatively circular.}
     \label{fig:MW_contour_0}
 \end{figure*}
 
@@ -172,9 +169,10 @@ In Figure \ref{fig:AR_evol}, we see how the axis ratios of the 3 different plane
 \section{Discussion}
 % summarize result, does it agree with hypothesis, how does it relate to existing work, importance for galaxy evolution
 Using the N-body simulations, our results show that the shape of the MW-M31 halo remnant 10 Gyrs from now will be triaxial because each axis will be a different length. The longest axis will be in the x-y plane, then the x-z plane and y-z plane will follow in size. Although the shape is triaxial in nature, the shape will have a prolateness to it since the x-y plane's axis is significantly longer than the other two.
-Our analysis supports our hypothesis that the shape of the halo evolves to be triaxial. In Figure \ref{fig:AR_evol} we see that around 9 Gyrs, the axis ratios for the x-y plane and y-z plane are tending back towards 1, which makes sense because as time progresses the shape of the halo will eventually relax similar to what the baryonic matter will do. Our claim that the axis ratios will become less symmetric over time as the merger happens is not supported by this result. In the future, it would be interesting to investigate the time at which the halo returns to a completely spherical shape.
+Our analysis supports our hypothesis that the shape of the halo evolves to be triaxial. In Figure \ref{fig:AR_evol} we see that by $\sim$9 Gyrs, the axis ratios for the x-y plane and y-z plane are tending back towards 1, which makes sense because as time progresses the shape of the halo will eventually relax similar to what the baryonic matter will do. Our claim that the axis ratios will become less symmetric over time as the merger happens is not supported by this result. In the future, it would be interesting to investigate the time at which the halo returns to a completely spherical shape.
 This analysis is in agreement with the \cite{2019drakos} simulations for equal-mass objects where their experiment resulted in a triaxial shape as well (see Figure \ref{fig:drakos}).
-This is important for galaxy evolution as a whole because understanding how the halo of the merger remnant between the MW and 31 galaxies evolves may aid our understanding of other galaxy mergers. Also, if we can predict the nature of the dark matter particles, we are one step closer to solving the dark matter paradigm.
+This is important for galaxy evolution as a whole because understanding how the halo of the merger remnant between the MW and 31 galaxies evolves may aid our understanding of other galaxy mergers. Also, if we can predict the nature of the dark matter particles, we are one step closer to solving the dark matter paradigm. 
+Our results also provides context when astronomers assume dark matter halos are perfectly spherical to compute their simulations. Any potential discrepancies between simulated data and theoretical models may be caused by this triaxial shape of the halo; assuming a spherical halo also loses information that comes from the direction of prolateness/oblateness including the direction of a major merger event.
 
 % uncertainties
 In Figure \ref{fig:AR_evol} we did not include M31 particles which may have had a slight effect on the axis ratios because the 2$\sigma$ isodensity contour level will be in a different position than for just the MW particles. 
@@ -203,12 +201,7 @@ If the simulations extended to farther times, we could investigate the timescale
 
 \section{acknowledgements}
 We acknowledge support from Dr. Gurtina Besla for her guidance and detailed outline for this study, Hayden Foote for troubleshooting code, Aidan DeBrae for his assistance with the ellipse function, and the python packages below.
-
-\software{
-Astropy              \citep{astropy2013, astropy2018},
-Matplotlib           \citep{matplotlib},
-NumPy                \citep{numpy},
-}
+This research made use of NumPy \citep{harris2020array} This research made use of matplotlib, a Python library for publication quality graphics \citep{Hunter:2007} This research made use of Astropy, a community-developed core Python package for Astronomy \citep{2018AJ....156..123A, 2013A&A...558A..33A}.
 
 \bibliography{sample631}{}
 \bibliographystyle{aasjournal}
